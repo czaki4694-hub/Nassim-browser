@@ -22,7 +22,6 @@ jobs:
         run: |
           unzip -q nasim-browser.zip -d site
           test -f site/nasim-browser/index.html
-      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/nasim-browser
